@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie Web</title>
+    <style>
+      /* Custom styles for Botpress chatbox */
+      .bpw-botpress-webchat {
+        --bpw-bot-border-color: #f97316; /* Border color */
+        --bpw-bot-background-color: #f97316; /* Background color */
+      }
+
+      /* Increase the size of the chatbox */
+      .bpw-container {
+        width: 400px !important; /* Adjust width */
+        height: 600px !important; /* Adjust height */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+        "composerPlaceholder": "Chat with bot",
+        "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+        "botId": "72782187-63ac-41ce-a608-7efe0700dc60",
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+        "messagingUrl": "https://messaging.botpress.cloud",
+        "clientId": "72782187-63ac-41ce-a608-7efe0700dc60",
+        "webhookId": "5947862a-fe60-471e-8d9d-aef3fadee219",
+        "lazySocket": true,
+        "themeName": "prism",
+        "frontendVersion": "v1",
+        "showPoweredBy": true,
+        "theme": "prism",
+        "themeColor": "#f97316", /* Orange color */
+        "allowedOrigins": []
+      });
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
